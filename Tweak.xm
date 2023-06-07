@@ -136,7 +136,7 @@ static UIColor* GetBattColor(int currentLevel)
 }
 
 
-%hook _STUIBatteryView
+%hook STUIBatteryView
 
 //iOS12 Support for devices with no home button
 -(UIColor *)fillColor
