@@ -136,7 +136,7 @@ static UIColor* GetBattColor(int currentLevel)
 }
 
 
-%hook _UIBatteryView
+%hook _STUIBatteryView
 
 //iOS12 Support for devices with no home button
 -(UIColor *)fillColor
@@ -215,7 +215,7 @@ static UIColor* GetBattColor(int currentLevel)
 
 %end
 
-%hook UIStatusBarForegroundStyleAttributes
+%hook STUIStatusBarForegroundStyleAttributes
 -(id) _batteryColorForCapacity:(int)arg1 lowCapacity:(int)arg2 style:(unsigned long long)arg3 usingTintColor:(BOOL)arg4
 {
   if (isEnabled)
