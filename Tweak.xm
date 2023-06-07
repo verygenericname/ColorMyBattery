@@ -9,15 +9,15 @@
 - (UIImage *)_flatImageWithColor:(UIColor *)color;
 @end
 
-@interface _UILegibilityImageSet
+@interface STUILegibilityImageSet
   @property (nonatomic,retain) UIImage * image;
 @end
 
-@interface UIStatusBarBatteryItemView
+@interface STUIStatusBarBatteryItemView
   @property (assign,nonatomic) int cachedCapacity;
 @end
 
-@interface _UIBatteryView : UIView
+@interface STUIBatteryView : UIView
   @property (assign,nonatomic) double chargePercent;
   @property (assign,nonatomic) BOOL saverModeActive;
   @property (assign,nonatomic) long long chargingState;
